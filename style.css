@@ -1,0 +1,120 @@
+:root {
+    --primary-blue: #2c59a8;
+    --bg-dark: #121212;
+    --card-bg: #1e1e1e;
+    --text-main: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0a0a0a;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-main);
+}
+
+#app-container {
+    width: 90%;
+    max-width: 900px;
+    height: 85vh;
+    background: var(--card-bg);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+header {
+    background: var(--primary-blue);
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#bot-logo {
+    height: 45px;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+#chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 12px 18px;
+    border-radius: 15px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background: #2d2d2d;
+    border-bottom-left-radius: 2px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background: var(--primary-blue);
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+/* Bloques de código */
+pre {
+    background: #000;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid #333;
+    margin: 10px 0;
+}
+
+code {
+    font-family: 'Consolas', monospace;
+    color: #4af626;
+}
+
+#input-area {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    background: #151515;
+}
+
+#user-input {
+    flex: 1;
+    background: #252525;
+    border: 1px solid #444;
+    padding: 12px;
+    color: white;
+    border-radius: 8px;
+    outline: none;
+}
+
+#send-btn {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
